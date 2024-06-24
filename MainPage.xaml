@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApiExample.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Entrez un prenom:" />
+        <Entry x:Name="FirstNameEntry" Placeholder="First Name" />
+
+        <Label Text="Entrez l'année de recherche:" />
+        <Entry x:Name="YearEntry" Placeholder="Year" Keyboard="Numeric" />
+
+        <Button Text="Récupérer les données" Clicked="OnFetchDataClicked"/>
+
+        <Label x:Name="ResultLabel" Text="Le resultat apparaitra ici" />
+    </StackLayout>
+</ContentPage>
